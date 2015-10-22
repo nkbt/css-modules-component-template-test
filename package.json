@@ -1,0 +1,43 @@
+{
+  "name": "css-modules-component-template-test",
+  "version": "0.0.0",
+  "description": "Test styled UI component with CSS-Modules",
+  "scripts": {
+    "prebuild": "cp -f node_modules/css-modules-component-template/lib/Component.css Component.css",
+    "build": "browserify src/index.js -t babelify --outfile bundle.js"
+  },
+  "engines": {
+    "node": ">=0.10"
+  },
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nkbt/css-modules-component-template-test.git"
+  },
+  "keywords": [
+    "component",
+    "react-component",
+    "react",
+    "css-modules"
+  ],
+  "author": "Nik Butenko <nik@butenko.me> (http://butenko.me/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nkbt/css-modules-component-template-test/issues"
+  },
+  "homepage": "https://github.com/nkbt/css-modules-component-template-test",
+  "dependencies": {
+    "css-modules-component-template": "^1.0.1",
+    "react": "^0.14",
+    "react-dom": "^0.14.0"
+  },
+  "devDependencies": {
+    "babelify": "^6.4.0",
+    "browserify": "^11.2.0",
+    "browserify-css": "^0.7.1"
+  }
+}
